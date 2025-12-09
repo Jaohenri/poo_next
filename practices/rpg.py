@@ -47,7 +47,7 @@ class monster:
             self.agility = 10
 
 gandalf = Human("Gandalf","Human","Male","Mage")
-legolas = Human("Legolas","Human","Female","Archer")
+legolas = Human("Legolasgi","Human","Female","Archer")
 goblin = monster("Gobby","Goblin")
 orc = monster("Orcy","Orc")
 
