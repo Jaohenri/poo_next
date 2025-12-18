@@ -1,17 +1,17 @@
 class Entity:
-    def __init__(self, name):
+    def __init__(self, name: str) -> None:
         self.name = name
         self.active = True
 
-    def set_active(self,active):
+    def set_active(self,active: bool) -> None:
         self.active = active
 
-    def is_active(self):
+    def is_active(self) -> bool:
         return self.active      
 
 class Game(Entity):
 
-    def __init__(self, name, synopsis, genre, platform,engine, status):
+    def __init__(self, name: str, synopsis: str, genre: str, platform: str,engine: str, status: str) -> None:
         super().__init__(name)
         self.synopsis = synopsis
         self.genre = genre
@@ -20,7 +20,7 @@ class Game(Entity):
         self.status = status
 
 class Person(Entity):
-    def __init__(self, name, email, address, position):
+    def __init__(self, name: str, email: str, address: str, position: str) -> None:
         super().__init__(name)
         self.email = email
         self.address = address

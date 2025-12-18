@@ -1,23 +1,23 @@
 """Encapsulation"""
 
 class BankAccount:
-    def __init__(self, owner, initial_balance):
+    def __init__(self, owner: str, initial_balance: float) -> None:
         self.owner = owner
         self.__balance = initial_balance  #  Private atribute
 
-    def deposit(self, value):
+    def deposit(self, value: float) -> None:
         if value > 0:
             self.__balance += value
         else:
             print('Invalid value to deposit')
 
-    def withdraw(self, value):
+    def withdraw(self, value:float) -> None:
         if 0 < value <= self.__balance:
             self.__balance -= value
         else:
             print('Not enough balance or invalid value')
 
-    def show_balance(self):
+    def show_balance(self) -> str:
         return f'Actual balance: R${self.__balance:.2f}'
 
 if __name__ == '__main__':

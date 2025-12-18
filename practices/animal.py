@@ -1,23 +1,23 @@
 """Heritage"""
 
 class Animal:
-    def __init__(self, name, habitat, diet):
+    def __init__(self, name: str, habitat: str, diet: str) -> None:
         self.name = name
         self.habitat = habitat
         self.diet = diet
 
-    def moviment(self):
+    def moviment(self) -> None:
         print(f'{self.name} is moving')
 
 class Dog(Animal):
-    def bark(self):
+    def bark(self) -> None:
         print(f'{self.name} is barking')
 
 class Snake(Animal):
-    def bite(self):
+    def bite(self) -> None:
         print(f'{self.name} is biting')
 
-    def moviment(self):
+    def moviment(self) -> None:
         print(f'{self.name} is crawling')
 
 

@@ -1,14 +1,14 @@
 class Nps:
-    def __init__(self):
+    def __init__(self) -> None:
         self.notes = []
 
-    def add_note(self, note):
+    def add_note(self, note: float) -> None:
         if 0 <= note <= 10:
             self.notes.append(note)
         else:
             print("Note must be between 0 and 10")
 
-    def calculate_nps(self):
+    def calculate_nps(self) -> float:
         detractors = [n for n in self.notes if n <= 6]
         promotors = [n for n in self.notes if n >= 9]
 
@@ -19,7 +19,7 @@ class Nps:
 
         return nps
     
-    def avaliate_nps(self):
+    def avaliate_nps(self) -> None:
         nps = self.calculate_nps()
 
         if nps < 0:

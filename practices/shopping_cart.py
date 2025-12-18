@@ -1,16 +1,16 @@
 """Dunder Methods"""
 
 class Shopping_cart:
-    def __init__(self):
+    def __init__(self) -> None:
         self.cart = {}
 
-    def __setitem__(self, product, quantity):
+    def __setitem__(self, product: str, quantity: int) -> None:
         if quantity <= 0:
             print("Quantity cannot be 0 or less")
         else:
             self.cart[product] = quantity
 
-    def __getitem__(self, product):
+    def __getitem__(self, product: str) -> int:
         return self.cart.get(product, "Not found")
     
 if __name__ == "__main__":

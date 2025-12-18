@@ -1,17 +1,17 @@
 """Dunder Methods"""
 
 class Coordinates:
-    def __init__(self, x, y):
+    def __init__(self, x: int | float, y: int | float) -> int | float:
         self.x = x
         self.y = y
 
-    def __add__(self, other):
+    def __add__(self, other: object) -> "Coordinates":
         new_coordinate = Coordinates(self.x , self.y)
         new_coordinate.x = self.x + other.x
         new_coordinate.y = self.y + other.y
         return new_coordinate
 
-    def __str__(self):
+    def __str__(self) -> str:
         return f'({self.x}, {self.y})'
     
 if __name__ == '__main__':

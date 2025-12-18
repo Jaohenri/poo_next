@@ -1,17 +1,17 @@
 """Heritage"""
 
 class People:
-    def __init__(self, name, age):
+    def __init__(self, name: str, age: int) -> None:
         self.name = name
         self.age = age
     
 class Employee(People):
-    def __init__(self, name, age, position):
+    def __init__(self, name: str, age: int, position) -> None:
         super().__init__(name, age)
         self.position = position
 
 class Client(People):
-    def __init__(self, name, age, gender, balance):
+    def __init__(self, name: str, age: int, gender: str, balance: float) -> None:
         super().__init__(name, age)
         self.gender = gender
         self.balance = balance

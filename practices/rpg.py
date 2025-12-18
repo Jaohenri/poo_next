@@ -1,6 +1,6 @@
 class Human:
     life = 100
-    def __init__(self, name, race, gender, char_class):
+    def __init__(self, name: str, race: str, gender: str, char_class: str) -> None:
         self.name = name
         self.race = race
         self.gender = gender
@@ -25,7 +25,7 @@ class Human:
 
 class monster:
     life = 100
-    def __init__(self, name, monster_type):
+    def __init__(self, name: str, monster_type: str) -> None:
         self.name = name
         self.monster_type = monster_type
 
