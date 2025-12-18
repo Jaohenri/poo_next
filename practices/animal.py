@@ -1,3 +1,5 @@
+"""Heritage"""
+
 class Animal:
     def __init__(self, name, habitat, diet):
         self.name = name
