@@ -1,4 +1,13 @@
 class Entity:
+    """
+    Class Entity to be inherited by Game and Person
+
+    Parameters:
+    name (str): Name of the entity
+
+    Returns:
+    None
+    """
     def __init__(self, name: str) -> None:
         self.name = name
         self.active = True
@@ -7,11 +16,13 @@ class Entity:
         self.active = active
 
     def is_active(self) -> bool:
-        return self.active      
+        return self.active
 
 class Game(Entity):
 
-    def __init__(self, name: str, synopsis: str, genre: str, platform: str,engine: str, status: str) -> None:
+    def __init__(self, name: str, synopsis: str,
+                 genre: str, platform: str,
+                 engine: str, status: str) -> None:
         super().__init__(name)
         self.synopsis = synopsis
         self.genre = genre
@@ -20,6 +31,9 @@ class Game(Entity):
         self.status = status
 
 class Person(Entity):
+    """
+    Docstring for Person
+    """
     def __init__(self, name: str, email: str, address: str, position: str) -> None:
         super().__init__(name)
         self.email = email
