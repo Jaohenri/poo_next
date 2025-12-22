@@ -38,4 +38,3 @@ class Person(Entity):
         self.email = email
         self.address = address
         self.position = position
-   
