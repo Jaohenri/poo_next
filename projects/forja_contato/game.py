@@ -1,12 +1,11 @@
+"""Entity Module - Forja Contact """
+
 class Entity:
     """
-    Class Entity to be inherited by Game and Person
+    Represents a Entity in the system.
 
     Parameters:
-    name (str): Name of the entity
-
-    Returns:
-    None
+    name (str): Name of the Entity
     """
     def __init__(self, name: str) -> None:
         self.name = name
@@ -39,7 +38,4 @@ class Person(Entity):
         self.email = email
         self.address = address
         self.position = position
-
-
-
    
