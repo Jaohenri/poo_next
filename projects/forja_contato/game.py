@@ -1,11 +1,16 @@
-"""Entity Module - Forja Contact """
+"""Module for Game and Person classes."""
 
 class Entity:
     """
     Represents a Entity in the system.
 
-    Parameters:
+    Attributes:
     name (str): Name of the Entity
+    active (bool): Status of the Entity
+
+    Methods:
+    set_active(active: bool) -> None: Sets the active status of the Entity
+    is_active() -> bool: Returns the active status of the Entity
     """
     def __init__(self, name: str) -> None:
         self.name = name
