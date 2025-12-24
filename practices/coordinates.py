@@ -1,7 +1,7 @@
 """Dunder Methods"""
 
 class Coordinates:
-    def __init__(self, x: int | float, y: int | float) -> int | float:
+    def __init__(self, x: float, y: float) -> float:
         self.x = x
         self.y = y
 
