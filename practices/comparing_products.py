@@ -1,4 +1,4 @@
-"""Dunder Methods"""
+"""Dunder Methods Example"""
 
 class Product:
     def __init__(self, name: str, price: float) -> None:

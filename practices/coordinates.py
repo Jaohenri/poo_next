@@ -1,4 +1,4 @@
-"""Dunder Methods"""
+"""Dunder Methods example"""
 
 class Coordinates:
     def __init__(self, x: float, y: float) -> float:

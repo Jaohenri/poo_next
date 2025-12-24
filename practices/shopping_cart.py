@@ -1,4 +1,4 @@
-"""Dunder Methods"""
+"""Dunder Methods example"""
 
 class Shopping_cart:
     def __init__(self) -> None:

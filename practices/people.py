@@ -1,4 +1,4 @@
-"""Heritage"""
+"""Heritage example"""
 
 class People:
     def __init__(self, name: str, age: int) -> None:

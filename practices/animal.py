@@ -1,4 +1,4 @@
-"""Heritage"""
+"""Heritage example"""
 
 class Animal:
     def __init__(self, name: str, habitat: str, diet: str) -> None:
@@ -32,4 +32,3 @@ if __name__ == '__main__':
     print(naguini.name,naguini.habitat,naguini.diet)
     naguini.moviment()
     naguini.bite()
-
