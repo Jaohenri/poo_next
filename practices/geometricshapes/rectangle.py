@@ -1,4 +1,6 @@
-"""Module for Rectangle"""
+"""
+Module for Rectangle
+"""
 from geometric_shape import GeometricShape
 
 class Rectangle(GeometricShape):

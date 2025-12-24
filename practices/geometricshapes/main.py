@@ -1,3 +1,6 @@
+"""
+Example usage of Rectangle and Circle classes.
+"""
 from rectangle import Rectangle
 from circle import Circle
 
